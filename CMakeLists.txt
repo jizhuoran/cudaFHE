@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(cudaFHE LANGUAGES CXX)
 
-add_library(cudaFHE SHARED IMPORTED)
+add_library(cudaFHE SHARED IMPORTED GLOBAL)
 
 set_target_properties(cudaFHE PROPERTIES
     IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/lib/libcudaFHE.so"
